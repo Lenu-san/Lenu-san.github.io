@@ -2,7 +2,7 @@
 (function () {
   // --- À personnaliser : colle ici ton URL LinkedIn entre les guillemets.
   // Tant que c'est vide, les boutons LinkedIn restent masqués.
-  var LINKEDIN_URL = "";
+  var LINKEDIN_URL = "https://www.linkedin.com/in/l%C3%A9nusan-g-0470b6336/";
 
   document.querySelectorAll(".linkedin-link").forEach(function (link) {
     if (LINKEDIN_URL) {
