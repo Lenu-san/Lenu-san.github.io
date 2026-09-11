@@ -1,0 +1,850 @@
+{
+  "lang": "fr",
+  "localeTag": "fr_FR",
+  "meta": {
+    "title": "Lénusan Gunarajah — Ingénieur cybersécurité junior | Audit de sécurité, sécurité des infrastructures, services managés",
+    "description": "Ingénieur cybersécurité junior, diplômé du Mastère Cybersécurité d'Ynov Paris : audit de règles de pare-feu (Forcepoint, FortiGate, AlgoSec), sécurité des infrastructures (Olfeo, HAProxy, Keepalived), Active Directory et Kerberos, diagnostic d'incidents en production. Recherche un poste junior au Luxembourg, à Metz ou à Thionville.",
+    "keywords": "ingénieur cybersécurité junior, consultant cybersécurité junior, Luxembourg, Metz, Thionville, audit de pare-feu, Forcepoint, FortiGate, AlgoSec, sécurité des infrastructures, services managés, Olfeo, HAProxy, Keepalived, Active Directory, Kerberos",
+    "ogAlt": "Lénusan Gunarajah — Ingénieur cybersécurité junior : audit de sécurité, sécurité des infrastructures, services managés",
+    "switchLabel": "Read this page in English",
+    "switchShort": "EN",
+    "themeLabel": "Basculer le thème clair ou sombre",
+    "themeLight": "Thème clair",
+    "themeDark": "Thème sombre"
+  },
+  "skipLink": "Aller au contenu principal",
+  "nav": {
+    "label": "Navigation principale",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "items": [
+      {
+        "id": "profil",
+        "label": "Profil"
+      },
+      {
+        "id": "competences",
+        "label": "Compétences"
+      },
+      {
+        "id": "experience",
+        "label": "Expérience"
+      },
+      {
+        "id": "projets",
+        "label": "Projets"
+      },
+      {
+        "id": "certifications",
+        "label": "Certifications"
+      },
+      {
+        "id": "formation",
+        "label": "Formation"
+      },
+      {
+        "id": "contact",
+        "label": "Contact"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Audit de sécurité · Sécurité des infrastructures · Services managés",
+    "name": "Lénusan Gunarajah",
+    "role": "Ingénieur cybersécurité junior",
+    "subtitle": "Audit de sécurité | Sécurité des infrastructures | Services managés",
+    "intro": "Diplômé du Mastère Cybersécurité d'Ynov Paris, avec une expérience pratique en alternance chez Novastill, en services managés auprès de plusieurs clients : audits de règles de pare-feu Forcepoint et FortiGate, plateformes de filtrage web en haute disponibilité, intégration Active Directory et Kerberos, diagnostic d'incidents de production et rédaction de rapports techniques.",
+    "searchLabel": "Recherche",
+    "search": "Poste d'ingénieur ou de consultant cybersécurité junior — Luxembourg, Metz, Thionville et France frontalière — disponible à partir du 29 septembre 2026",
+    "domainsLabel": "Domaines de compétence",
+    "domains": [
+      "Audit de règles de pare-feu",
+      "Sécurité des infrastructures",
+      "Services managés multi-clients",
+      "Annuaires et authentification",
+      "Diagnostic d'incidents",
+      "Gouvernance et conformité"
+    ],
+    "facts": [
+      {
+        "icon": "pin",
+        "text": "Aulnay-sous-Bois, France"
+      },
+      {
+        "icon": "route",
+        "text": "Mobilité : Luxembourg / Metz / Thionville"
+      },
+      {
+        "icon": "car",
+        "text": "Permis B"
+      },
+      {
+        "icon": "calendar",
+        "text": "Disponible à partir du 29 septembre 2026"
+      }
+    ],
+    "ctaCv": "Télécharger mon CV",
+    "ctaLinkedin": "LinkedIn",
+    "ctaGithub": "GitHub",
+    "ctaContact": "Me contacter",
+    "statsLabel": "Repères de mon alternance chez Novastill",
+    "stats": [
+      {
+        "value": "841",
+        "label": "règles de pare-feu analysées lors d'un audit Forcepoint NGFW / SMC"
+      },
+      {
+        "value": "27 p.",
+        "label": "de rapport d'audit remis au RSSI du client"
+      },
+      {
+        "value": "8",
+        "label": "nœuds au maximum sur un cluster de filtrage web Olfeo"
+      },
+      {
+        "value": "3",
+        "label": "clients accompagnés en services managés"
+      }
+    ],
+    "terminal": {
+      "title": "audit — session de démonstration",
+      "note": "Sorties réelles de mes outils sur leurs jeux de données d'exemple (données fictives).",
+      "scenes": [
+        {
+          "cmd": "python fw_audit.py samples/ruleset-exemple.csv",
+          "lines": [
+            {
+              "sev": "",
+              "text": "Audit de ruleset-exemple.csv — 9 règle(s) analysée(s)"
+            },
+            {
+              "sev": "critique",
+              "text": "CRITIQUE  ligne 2 — Règle permissive « any → any »"
+            },
+            {
+              "sev": "elevee",
+              "text": "ÉLEVÉE    ligne 3 — RDP (3389) exposé depuis n'importe quelle source"
+            },
+            {
+              "sev": "elevee",
+              "text": "ÉLEVÉE    ligne 4 — SSH (22) exposé depuis n'importe quelle source"
+            },
+            {
+              "sev": "moyenne",
+              "text": "MOYENNE   ligne 6 — Protocole en clair FTP (21) autorisé largement"
+            },
+            {
+              "sev": "info",
+              "text": "INFO      ligne 8 — Règle non documentée"
+            },
+            {
+              "sev": "bilan",
+              "text": "Bilan — CRITIQUE: 1  ÉLEVÉE: 3  MOYENNE: 2  INFO: 1"
+            }
+          ]
+        },
+        {
+          "cmd": "python fgt_parser.py samples/fortigate-exemple.conf",
+          "lines": [
+            {
+              "sev": "",
+              "text": "VDOM root — 5 politique(s)   actives : 4   désactivées : 1"
+            },
+            {
+              "sev": "elevee",
+              "text": "⚠ any→any en accept : 1"
+            },
+            {
+              "sev": "moyenne",
+              "text": "⚠ accept sans journalisation : 1"
+            },
+            {
+              "sev": "info",
+              "text": "⚠ sans nom : 1"
+            },
+            {
+              "sev": "bilan",
+              "text": "Export CSV : 5 lignes, 14 colonnes"
+            }
+          ]
+        },
+        {
+          "cmd": "node pac-check.js samples/proxy.pac --check samples/attendus.txt --no-dns",
+          "lines": [
+            {
+              "sev": "ok",
+              "text": "OK  http://intranet/                       DIRECT"
+            },
+            {
+              "sev": "ok",
+              "text": "OK  https://portail.intra.example.org/app  DIRECT"
+            },
+            {
+              "sev": "ok",
+              "text": "OK  https://www.example.com/               PROXY proxy-vip:8080; PROXY proxy-01:8080; DIRECT"
+            },
+            {
+              "sev": "bilan",
+              "text": "6/6 attentes vérifiées"
+            }
+          ]
+        },
+        {
+          "cmd": "python scan_secrets.py samples/",
+          "lines": [
+            {
+              "sev": "elevee",
+              "text": "ÉLEVÉE  ligne 2  Identifiants dans une URL    postgres://app:[MASQUÉ]@db01"
+            },
+            {
+              "sev": "elevee",
+              "text": "ÉLEVÉE  ligne 5  Authentification HTTP Basic  Authorization: Basic [MASQUÉ]"
+            },
+            {
+              "sev": "elevee",
+              "text": "ÉLEVÉE  ligne 7  Clé d'accès AWS              aws_access_key_id=[MASQUÉ]"
+            },
+            {
+              "sev": "bilan",
+              "text": "Bilan — ÉLEVÉE: 5  MOYENNE: 1  (6 constat(s))"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "Profil",
+    "lead": "Je recherche un poste d'ingénieur ou de consultant cybersécurité junior, en priorité au Luxembourg, en France frontalière et dans le bassin Metz / Thionville.",
+    "blocks": [
+      {
+        "title": "Parcours",
+        "text": "Baccalauréat STI2D, BTS SIO à l'EFREI, puis Bachelor Informatique et Mastère Cybersécurité à Ynov Paris (titre RNCP 40897 « Expert en cybersécurité », niveau 7). Depuis novembre 2025, alternance chez Novastill, ESN spécialisée en cybersécurité et en services managés."
+      },
+      {
+        "title": "Positionnement",
+        "text": "Audit de configuration, sécurité des infrastructures et services managés : j'interviens sur des environnements de production multi-clients, de l'analyse d'un jeu de règles de pare-feu à l'exploitation d'une plateforme de filtrage web en haute disponibilité, en passant par le diagnostic d'incidents et la rédaction de livrables."
+      },
+      {
+        "title": "Posture de conseil",
+        "text": "Je dialogue directement avec les interlocuteurs du client — RSSI, DSI, DPO — et avec les éditeurs, et je traduis un constat technique en recommandation actionnable, dans un rapport ou un compte rendu."
+      },
+      {
+        "title": "Automatisation, en complément",
+        "text": "Le scripting n'est pas mon cœur de métier. J'utilise Python, Bash et PowerShell comme des outils d'automatisation et de diagnostic : parser un export de configuration, collecter des journaux, vérifier une configuration avant déploiement. Mes dépôts GitHub sont de petits outils d'audit et de diagnostic écrits dans cette logique."
+      }
+    ]
+  },
+  "domains": {
+    "title": "Domaines d'intervention",
+    "intro": "Les sujets sur lesquels je suis intervenu en alternance et en formation.",
+    "items": [
+      {
+        "icon": "shield",
+        "title": "Audit de configuration de pare-feux",
+        "text": "Analyse de règles Forcepoint NGFW / SMC et FortiGate, utilisation d'AlgoSec Firewall Analyzer, identification des règles permissives ou obsolètes, analyse du logging, rapport d'audit et recommandations."
+      },
+      {
+        "icon": "layers",
+        "title": "Sécurité des infrastructures",
+        "text": "Plateformes de filtrage web Olfeo v7 en haute disponibilité : HAProxy, Keepalived / VRRP, adresses virtuelles, politiques de filtrage, fichiers PAC, rétention des journaux."
+      },
+      {
+        "icon": "key",
+        "title": "Annuaires et authentification",
+        "text": "Jonction de plateformes à l'Active Directory, authentification Kerberos et NTLM, Winbind, LDAP, SPN et keytabs, environnements multi-domaines, GPO."
+      },
+      {
+        "icon": "pulse",
+        "title": "Diagnostic d'incidents de production",
+        "text": "Elasticsearch, PostgreSQL, rsyslog, HAProxy, Linux et Windows Server : qualification d'un défaut, remise en service, remontée argumentée à l'éditeur."
+      },
+      {
+        "icon": "users",
+        "title": "Services managés multi-clients",
+        "text": "Exploitation d'environnements de production chez plusieurs clients, relation avec les RSSI, DSI, DPO et éditeurs, comptes rendus, procédures et livrables techniques et fonctionnels."
+      },
+      {
+        "icon": "book",
+        "title": "Gouvernance et conformité",
+        "text": "Gestion des risques, ISO 27001, RGPD (rétention des journaux, chartes d'usage), notions de NIS2, sensibilisation à l'hygiène des mots de passe et au phishing."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences",
+    "intro": "Compétences mises en œuvre en alternance, en formation et sur mes projets personnels, organisées par domaine.",
+    "note": "L'automatisation est une compétence complémentaire : je l'utilise pour accélérer une analyse ou un diagnostic, pas comme métier principal.",
+    "groups": [
+      {
+        "title": "Audit et gouvernance",
+        "items": [
+          "Audit de configuration",
+          "Analyse de règles de pare-feu",
+          "Identification des risques",
+          "Gestion des vulnérabilités",
+          "Rédaction de rapports techniques",
+          "Recommandations de sécurité",
+          "ISO 27001",
+          "RGPD",
+          "NIS2 (notions)",
+          "Sensibilisation"
+        ]
+      },
+      {
+        "title": "Sécurité réseau et pare-feu",
+        "items": [
+          "Forcepoint NGFW / SMC",
+          "FortiGate (FortiOS 7.x)",
+          "AlgoSec Firewall Analyzer",
+          "pfSense",
+          "VPN IPsec",
+          "IDS / IPS",
+          "VLAN",
+          "DNS",
+          "DHCP"
+        ]
+      },
+      {
+        "title": "Sécurité des infrastructures",
+        "items": [
+          "Olfeo v7",
+          "HAProxy",
+          "Keepalived / VRRP",
+          "Adresses virtuelles (VIP)",
+          "Filtrage web et proxy",
+          "Fichiers PAC",
+          "Haute disponibilité",
+          "Wallix Bastion"
+        ]
+      },
+      {
+        "title": "Systèmes et annuaires",
+        "items": [
+          "Windows Server",
+          "Active Directory",
+          "GPO",
+          "Linux (Debian, Ubuntu, Kali)",
+          "Kerberos",
+          "NTLM",
+          "Winbind",
+          "LDAP",
+          "Environnements multi-domaines",
+          "systemd"
+        ]
+      },
+      {
+        "title": "Supervision et diagnostic",
+        "items": [
+          "Elasticsearch",
+          "PostgreSQL",
+          "rsyslog",
+          "logrotate",
+          "cron",
+          "Analyse de journaux",
+          "Concepts SIEM",
+          "Supervision réseau",
+          "Diagnostic d'incidents"
+        ]
+      },
+      {
+        "title": "Outils de cybersécurité",
+        "items": [
+          "Wireshark",
+          "Nmap",
+          "Burp Suite",
+          "Metasploit",
+          "Kali Linux",
+          "GLPI",
+          "MobaXterm",
+          "SQL"
+        ]
+      },
+      {
+        "title": "Automatisation complémentaire",
+        "items": [
+          "Python (bibliothèque standard)",
+          "Bash",
+          "PowerShell",
+          "Parsing d'exports de configuration (XML, FortiOS, CSV)",
+          "Scripts de supervision et d'alerting",
+          "Export de données"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "intro": "Alternance en environnement de production, sur des missions réelles chez plusieurs clients.",
+    "role": "Ingénieur cybersécurité — alternance",
+    "company": "Novastill",
+    "period": "Novembre 2025 – septembre 2026",
+    "context": "ESN spécialisée en cybersécurité, services managés et interventions multi-clients.",
+    "missionsLabel": "Missions",
+    "missions": [
+      {
+        "title": "Audit de configuration de pare-feux",
+        "tag": "Audit",
+        "items": [
+          "Audit Forcepoint NGFW / SMC : analyse de 841 règles réparties sur 2 clusters et 7 sous-politiques.",
+          "Identification des règles obsolètes et permissives, analyse de l'exposition et des risques associés, analyse du paramétrage du logging.",
+          "Rapport d'audit de 27 pages remis au RSSI du client, avec recommandations de rationalisation et de sécurisation.",
+          "Audit d'un FortiGate 601E (FortiOS 7.4.9) avec AlgoSec Firewall Analyzer, pour une collectivité territoriale.",
+          "Outil Python d'aide à l'analyse : parsing XML des exports de configuration, cartographie et qualification des règles."
+        ]
+      },
+      {
+        "title": "Filtrage web et haute disponibilité",
+        "tag": "Infrastructure",
+        "items": [
+          "Déploiement et exploitation de clusters Olfeo v7, jusqu'à 8 nœuds, chez trois clients.",
+          "Haute disponibilité VRRP / Keepalived et gestion des adresses virtuelles (VIP) ; répartition de charge avec HAProxy.",
+          "Jonction des plateformes à l'Active Directory du client, authentification Kerberos et NTLM."
+        ]
+      },
+      {
+        "title": "Politiques de filtrage et fichiers PAC",
+        "tag": "Exploitation",
+        "items": [
+          "Conception et adaptation de fichiers PAC : exclusions par domaine et par plage IP, bascule automatique sur adresse virtuelle, stratégies de failover.",
+          "Politiques de filtrage URL, restrictions horaires, chartes d'usage Internet avec signature utilisateur.",
+          "Paramétrage de la rétention des journaux conformément au RGPD."
+        ]
+      },
+      {
+        "title": "Diagnostic et gestion d'incidents",
+        "tag": "Incidents",
+        "items": [
+          "Restauration d'un pipeline de statistiques Elasticsearch : diagnostic d'une agrégation multi-nœuds et retour en production d'un service indisponible.",
+          "Correction d'un script d'alerting HAProxy qui provoquait une consommation CPU excessive ; industrialisation de la collecte des journaux avec rsyslog.",
+          "Qualification d'un défaut produit sur VRRP et remontée argumentée à l'éditeur.",
+          "Identification et signalement de secrets présents en clair dans des journaux applicatifs."
+        ]
+      },
+      {
+        "title": "Identité et authentification",
+        "tag": "Annuaires",
+        "items": [
+          "Participation à une étude de migration de NTLM / Winbind vers Kerberos.",
+          "Analyse des SPN, des keytabs et des environnements multi-domaines.",
+          "Étude des paramètres GPO liés aux navigateurs, en environnement Active Directory."
+        ]
+      },
+      {
+        "title": "Conseil et organisation",
+        "tag": "Conseil",
+        "items": [
+          "Étude comparative de 10 solutions ITSM et recommandation d'une architecture multi-clients avec isolation par entité.",
+          "Structuration d'une CMDB, d'une matrice de criticité P1 à P4 et des engagements de service associés ; feuille de route de déploiement sur 12 semaines.",
+          "Rédaction de livrables techniques et fonctionnels ; échanges avec les clients, RSSI, DSI, DPO et éditeurs."
+        ]
+      }
+    ]
+  },
+  "methods": {
+    "title": "Méthodes et outils",
+    "intro": "Comment je mène une mission d'audit ou de diagnostic, et avec quoi.",
+    "processTitle": "Démarche d'audit de pare-feu",
+    "process": [
+      {
+        "step": "Collecte",
+        "text": "Récupération de l'export de configuration (Forcepoint SMC, sauvegarde FortiOS, pfSense) selon une procédure de collecte documentée."
+      },
+      {
+        "step": "Mise à plat",
+        "text": "Reconstruction de la table des règles : objets, groupes, VDOM, sous-politiques, interfaces."
+      },
+      {
+        "step": "Qualification",
+        "text": "Repérage des règles permissives, obsolètes, désactivées, non journalisées ou non documentées ; contrôle du logging."
+      },
+      {
+        "step": "Analyse",
+        "text": "Exposition des services sensibles, protocoles en clair, plages larges, risques associés et contexte métier."
+      },
+      {
+        "step": "Restitution",
+        "text": "Rapport d'audit avec recommandations de rationalisation et de sécurisation, présenté au RSSI."
+      }
+    ],
+    "toolsTitle": "Outils par usage",
+    "tools": [
+      {
+        "label": "Audit et analyse",
+        "items": [
+          "AlgoSec Firewall Analyzer",
+          "Forcepoint SMC",
+          "FortiOS",
+          "Wireshark",
+          "Nmap",
+          "fw-audit",
+          "fortigate-policy-parser"
+        ]
+      },
+      {
+        "label": "Exploitation et diagnostic",
+        "items": [
+          "Olfeo v7",
+          "HAProxy",
+          "haproxy-audit",
+          "Keepalived",
+          "Elasticsearch",
+          "PostgreSQL",
+          "rsyslog",
+          "pac-check",
+          "log-secret-scanner"
+        ]
+      },
+      {
+        "label": "Annuaires et accès",
+        "items": [
+          "Active Directory",
+          "Kerberos",
+          "NTLM / Winbind",
+          "LDAP",
+          "GPO",
+          "Wallix Bastion"
+        ]
+      },
+      {
+        "label": "Livrables",
+        "items": [
+          "Rapports d'audit",
+          "Comptes rendus",
+          "Procédures",
+          "Études comparatives",
+          "Feuilles de route"
+        ]
+      },
+      {
+        "label": "Référentiels",
+        "items": [
+          "ISO 27001",
+          "RGPD",
+          "NIS2 (notions)",
+          "ANSSI SecNumacadémie"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets",
+    "intro": "Outils d'audit, de diagnostic et d'apprentissage, publiés sur GitHub. Ils prolongent des situations rencontrées en mission ; le code reste volontairement simple, sans dépendance, et n'est pas une fin en soi.",
+    "codeLabel": "Voir le dépôt",
+    "demoLabel": "Démo",
+    "labels": {
+      "objective": "Objectif de sécurité",
+      "problem": "Problème traité",
+      "environment": "Environnement et outils",
+      "results": "Résultats",
+      "skills": "Compétences mobilisées"
+    },
+    "items": [
+      {
+        "name": "fw-audit",
+        "kind": "Outil d'audit",
+        "objective": "Repérer automatiquement les erreurs de configuration classiques dans un jeu de règles de pare-feu.",
+        "problem": "La relecture manuelle de plusieurs centaines de règles est longue et sujette à l'oubli. L'outil applique cinq contrôles — règle « any → any », service sensible exposé à toute source (port exact ou plage le contenant), protocole en clair, plage de ports large, règle non documentée — avec une sévérité et une recommandation par constat.",
+        "environment": [
+          "Python 3",
+          "Bibliothèque standard",
+          "CSV",
+          "Ligne de commande"
+        ],
+        "results": "18 tests unitaires passants. Lit aussi directement l'export CSV de fortigate-policy-parser (politiques désactivées ignorées, services FortiOS traduits en ports, constats rattachés à l'identifiant de politique). Validé sur 9 règles d'exemple et 5 politiques FortiGate.",
+        "skills": "Analyse de règles de pare-feu, qualification des risques, recommandations.",
+        "repo": "https://github.com/Lenu-san/fw-audit"
+      },
+      {
+        "name": "fortigate-policy-parser",
+        "kind": "Audit d'infrastructure",
+        "objective": "Mettre à plat une sauvegarde FortiGate en table de règles exploitable pour un audit.",
+        "problem": "Un export FortiOS fait plusieurs milliers de lignes. L'outil reconstruit les VDOM, les objets et les groupes, exporte les politiques en CSV et qualifie les règles : any → any en accept, règles désactivées, accept sans journalisation, règles sans nom.",
+        "environment": [
+          "Python 3",
+          "Bibliothèque standard",
+          "FortiOS 7.x",
+          "CSV"
+        ],
+        "results": "12 tests unitaires passants. Option --resolve : adresses en sous-réseaux et services en protocole/ports, lus directement par fw-audit. Sur la configuration d'exemple : 5 politiques, 3 constats. Politiques IPv4 uniquement.",
+        "skills": "Audit FortiGate, lecture de configuration FortiOS, cartographie de règles.",
+        "repo": "https://github.com/Lenu-san/fortigate-policy-parser"
+      },
+      {
+        "name": "haproxy-audit",
+        "kind": "Audit d'infrastructure · haute disponibilité",
+        "objective": "Relire une configuration HAProxy avec le regard d'un audit : exposition, TLS, journalisation, durcissement, et capacité à tenir une panne.",
+        "problem": "Une page de statistiques sans authentification, un stats admin actif, TLS 1.0 encore accepté ou un nœud sans health check restent invisibles jusqu'à l'incident. L'outil découpe haproxy.cfg en sections, applique l'héritage des defaults et remonte 20 contrôles de sécurité et de haute disponibilité avec sévérité et recommandation.",
+        "environment": [
+          "Python 3",
+          "Bibliothèque standard",
+          "HAProxy",
+          "Keepalived / VRRP"
+        ],
+        "results": "13 tests unitaires passants ; sur la configuration d'exemple : 1 constat critique, 3 élevés, 6 moyens ; la version durcie ne remonte rien. Analyse statique d'un seul fichier, ACL non interprétées.",
+        "skills": "Sécurité des infrastructures, haute disponibilité, analyse de configuration, recommandations.",
+        "repo": "https://github.com/Lenu-san/haproxy-audit"
+      },
+      {
+        "name": "pac-check",
+        "kind": "Filtrage web et haute disponibilité",
+        "objective": "Valider un fichier PAC avant déploiement, comme n'importe quelle configuration.",
+        "problem": "Une exclusion mal écrite ou une chaîne de bascule mal ordonnée casse un accès ou la haute disponibilité, et on ne s'en aperçoit qu'une fois le fichier déployé. L'outil évalue FindProxyForURL hors navigateur et compare le résultat à un fichier d'attentes.",
+        "environment": [
+          "Node.js 18+",
+          "Zéro dépendance",
+          "Bac à sable vm",
+          "PAC / proxy"
+        ],
+        "results": "6/6 attentes vérifiées sur le PAC d'exemple ; 7 tests automatisés passants (node:test). Ne reproduit pas la troncature des URL https faite par les navigateurs.",
+        "skills": "Filtrage web, haute disponibilité, exploitation de proxys.",
+        "repo": "https://github.com/Lenu-san/pac-check"
+      },
+      {
+        "name": "log-secret-scanner",
+        "kind": "Sécurité opérationnelle",
+        "objective": "Détecter des secrets en clair dans des journaux et fichiers de configuration, sans jamais les afficher.",
+        "problem": "Un service qui journalise un mot de passe ou un en-tête Authorization expose ce secret à tout lecteur des journaux et à la plateforme de collecte. Dix motifs, une sévérité par motif, valeurs déjà masquées ignorées, archives .gz lues en flux.",
+        "environment": [
+          "Python 3",
+          "Bibliothèque standard",
+          "Expressions régulières",
+          "Archives .gz"
+        ],
+        "results": "11 tests unitaires passants ; 6 constats masqués sur le journal d'exemple. Détection par motifs uniquement, sans analyse d'entropie.",
+        "skills": "Sécurité opérationnelle, gestion des journaux, signalement et remédiation.",
+        "repo": "https://github.com/Lenu-san/log-secret-scanner"
+      },
+      {
+        "name": "osint-toolkit",
+        "kind": "Reconnaissance défensive",
+        "objective": "Mesurer l'exposition publique d'une organisation de façon passive, avant un audit.",
+        "problem": "Huit commandes : DNS over HTTPS, WHOIS en sockets bruts, géolocalisation IP, inspection de certificat TLS, notation des en-têtes de sécurité HTTP, sous-domaines via Certificate Transparency, présence d'un pseudo, analyse d'en-têtes d'e-mail. Aucune sollicitation intrusive de la cible.",
+        "environment": [
+          "Python 3",
+          "Bibliothèque standard",
+          "DNS-over-HTTPS",
+          "TLS",
+          "crt.sh"
+        ],
+        "results": "Commandes réseau validées manuellement sur des domaines publics ; 6 tests unitaires sur les modules locaux (en-têtes d'e-mail, notation des en-têtes HTTP). Dépend de services tiers gratuits.",
+        "skills": "Reconnaissance passive, analyse d'en-têtes, sensibilisation au phishing.",
+        "repo": "https://github.com/Lenu-san/osint-toolkit"
+      },
+      {
+        "name": "pwned-check",
+        "kind": "Hygiène des identifiants",
+        "objective": "Vérifier qu'un mot de passe est compromis sans jamais l'exposer.",
+        "problem": "Modèle k-anonymity de Have I Been Pwned réimplémenté : hachage SHA-1 local, seuls les cinq premiers caractères du condensat sont envoyés, comparaison finale en local, réponse complétée par l'en-tête Add-Padding.",
+        "environment": [
+          "Node.js 18+",
+          "Zéro dépendance",
+          "API HIBP",
+          "SHA-1 / k-anonymity"
+        ],
+        "results": "Saisie masquée et codes de sortie distincts (absent, compromis, erreur). Un mot de passe à la fois ; pas de tests automatisés.",
+        "skills": "Hygiène des identifiants, sensibilisation.",
+        "repo": "https://github.com/Lenu-san/pwned-check"
+      },
+      {
+        "name": "pc-tools",
+        "kind": "Administration système",
+        "objective": "Appliquer les réflexes d'exploitation sûre — simulation par défaut, opération destructive explicite — à des tâches d'administration de fichiers.",
+        "problem": "Détection de doublons par empreinte SHA-256, recherche des plus gros fichiers, renommage en masse. La suppression exige --delete, le renommage exige --apply ; les collisions de noms sont listées sans écraser de donnée.",
+        "environment": [
+          "Python 3",
+          "Bibliothèque standard",
+          "Multiplateforme"
+        ],
+        "results": "Utilisé au quotidien ; 9 tests unitaires passants (doublons, gros fichiers, plan de renommage, collisions). Aucune corbeille : une suppression est définitive.",
+        "skills": "Administration système, gestion des erreurs d'accès, garde-fous.",
+        "repo": "https://github.com/Lenu-san/pc-tools"
+      },
+      {
+        "name": "Infrastructure Active Directory",
+        "kind": "Projet académique · Ynov Paris",
+        "objective": "Déployer et administrer un domaine Active Directory de bout en bout.",
+        "problem": "Gestion des utilisateurs et des stratégies de groupe (GPO), masterisation et déploiement de postes de travail via MDT et WDS.",
+        "environment": [
+          "Windows Server",
+          "Active Directory",
+          "GPO",
+          "MDT",
+          "WDS"
+        ],
+        "results": "Base pratique sur l'annuaire et le poste de travail, réutilisée ensuite en alternance sur la jonction de domaine et l'authentification.",
+        "skills": "Annuaires, stratégies de groupe, déploiement de postes.",
+        "repo": null
+      },
+      {
+        "name": "Labs et CTF",
+        "kind": "Entraînement personnel · depuis 2021",
+        "objective": "Entretenir la compréhension des techniques d'attaque pour mieux évaluer l'exposition d'une infrastructure.",
+        "problem": "Entraînement régulier sur des plateformes de labs et de CTF : pentest web, exploitation système, forensic, stéganographie, élévation de privilèges.",
+        "environment": [
+          "TryHackMe",
+          "Root-Me",
+          "Kali Linux",
+          "Burp Suite"
+        ],
+        "results": "Pratique continue, sans classement ni score mis en avant.",
+        "skills": "Culture offensive appliquée à l'audit défensif.",
+        "repo": null
+      }
+    ],
+    "aside": "Mon compte GitHub contient aussi un dépôt annexe hors cybersécurité, shader-lab (effets visuels WebGL), conservé par transparence.",
+    "asideLink": "https://github.com/Lenu-san/shader-lab",
+    "allProjects": "Tous mes dépôts sur GitHub"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "intro": "Certifications et formations suivies en complément du cursus, vérifiables sur Credly.",
+    "verifyLabel": "Vérifier mes badges sur Credly",
+    "items": [
+      {
+        "name": "Fortinet Certified Fundamentals in Cybersecurity",
+        "issuer": "Fortinet",
+        "date": "2025 — valide jusqu'en septembre 2027",
+        "note": ""
+      },
+      {
+        "name": "FortiGate 7.6 Operator",
+        "issuer": "Fortinet",
+        "date": "",
+        "note": ""
+      },
+      {
+        "name": "NSE 1 — Certified in Cybersecurity",
+        "issuer": "Fortinet",
+        "date": "2025 — valide jusqu'en septembre 2027",
+        "note": ""
+      },
+      {
+        "name": "NSE 2 — Certified in Cybersecurity",
+        "issuer": "Fortinet",
+        "date": "2025 — valide jusqu'en septembre 2027",
+        "note": ""
+      },
+      {
+        "name": "NSE 3 — Certified in Cybersecurity",
+        "issuer": "Fortinet",
+        "date": "",
+        "note": ""
+      },
+      {
+        "name": "Introduction to the Threat Landscape 3.0",
+        "issuer": "Fortinet",
+        "date": "",
+        "note": ""
+      },
+      {
+        "name": "Technical Introduction to Cybersecurity 2.0",
+        "issuer": "Fortinet",
+        "date": "",
+        "note": ""
+      },
+      {
+        "name": "CCST Cybersecurity",
+        "issuer": "Cisco",
+        "date": "",
+        "note": "Cisco Certified Support Technician"
+      },
+      {
+        "name": "Junior Cybersecurity Analyst Career Path",
+        "issuer": "Cisco Networking Academy",
+        "date": "",
+        "note": ""
+      },
+      {
+        "name": "Introduction to Cybersecurity",
+        "issuer": "Cisco Networking Academy",
+        "date": "Septembre 2025",
+        "note": ""
+      },
+      {
+        "name": "Cybersecurity Fundamentals",
+        "issuer": "IBM SkillsBuild",
+        "date": "Septembre 2025",
+        "note": ""
+      },
+      {
+        "name": "SecNumacadémie",
+        "issuer": "ANSSI — Agence nationale de la sécurité des systèmes d'information",
+        "date": "",
+        "note": ""
+      }
+    ]
+  },
+  "education": {
+    "title": "Formation",
+    "items": [
+      {
+        "degree": "Mastère Cybersécurité",
+        "school": "Ynov Paris",
+        "period": "2024 – 2026",
+        "note": "Titre RNCP 40897 « Expert en cybersécurité », niveau 7."
+      },
+      {
+        "degree": "Bachelor Informatique",
+        "school": "Ynov Paris",
+        "period": "2021 – 2024",
+        "note": ""
+      },
+      {
+        "degree": "BTS SIO",
+        "school": "EFREI, Villejuif",
+        "period": "2019 – 2020",
+        "note": ""
+      },
+      {
+        "degree": "Baccalauréat STI2D",
+        "school": "Lycée Eugène Hénaff, Bagnolet",
+        "period": "2017 – 2019",
+        "note": ""
+      }
+    ]
+  },
+  "languages": {
+    "title": "Langues et mobilité",
+    "languagesLabel": "Langues",
+    "items": [
+      {
+        "name": "Français",
+        "level": "C2"
+      },
+      {
+        "name": "Tamoul",
+        "level": "Langue maternelle"
+      },
+      {
+        "name": "Anglais",
+        "level": "B1 — certification British Council"
+      },
+      {
+        "name": "Japonais",
+        "level": "A1"
+      }
+    ],
+    "mobilityLabel": "Mobilité",
+    "mobility": [
+      "Basé à Aulnay-sous-Bois, France",
+      "Mobilité : Luxembourg / Metz / Thionville et régions frontalières",
+      "Permis B",
+      "Disponible à partir du 29 septembre 2026"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Je recherche un poste d'ingénieur ou de consultant cybersécurité junior, en priorité au Luxembourg, en France frontalière ou dans le bassin Metz / Thionville. N'hésitez pas à me contacter.",
+    "emailLabel": "Écrire un e-mail",
+    "linkedinLabel": "Profil LinkedIn",
+    "githubLabel": "Dépôts GitHub",
+    "cvLabel": "Télécharger mon CV",
+    "cvMissing": "CV disponible sur demande, par e-mail ou via LinkedIn."
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "builtWith": "Site statique sans dépendance ni traceur, généré à partir de fichiers de traduction FR / EN.",
+    "sourceLabel": "Code source du site"
+  }
+}
