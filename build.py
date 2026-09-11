@@ -30,7 +30,7 @@ SITE = {
     "author": "Lénusan Gunarajah",
     "fullName": "Lénusan Josap Gunarajah",
     "email": "lenuss@live.fr",
-    "linkedin": "https://www.linkedin.com/in/lenusan-gunarajah",
+    "linkedin": "https://www.linkedin.com/in/l%C3%A9nusan-g-0470b6336",
     "github": "https://github.com/Lenu-san",
     "credly": "https://www.credly.com/users/lenusan-josap-gunarajah/badges",
     "sourceRepo": "https://github.com/Lenu-san/Lenu-san.github.io",
